@@ -14,6 +14,7 @@
 		0431C9AC2A946D0B002151E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0431C9AB2A946D0B002151E0 /* Assets.xcassets */; };
 		0431C9AF2A946D0B002151E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0431C9AD2A946D0B002151E0 /* LaunchScreen.storyboard */; };
 		04350D1D2A96F49500C56A9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04350D1C2A96F49500C56A9A /* HomeViewController.swift */; };
+		04A424542A9DA7DD0042D05D /* DatabaseGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A424532A9DA7DD0042D05D /* DatabaseGetter.swift */; };
 		04A7FB1C2A9B968000B5E464 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A7FB192A9B968000B5E464 /* song2.mp3 */; };
 		04A7FB1D2A9B968000B5E464 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A7FB1A2A9B968000B5E464 /* song3.mp3 */; };
 		04A7FB1E2A9B968000B5E464 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04A7FB1B2A9B968000B5E464 /* song1.mp3 */; };
@@ -33,6 +34,7 @@
 		0431C9AE2A946D0B002151E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0431C9B02A946D0B002151E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04350D1C2A96F49500C56A9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04A424532A9DA7DD0042D05D /* DatabaseGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseGetter.swift; sourceTree = "<group>"; };
 		04A7FB192A9B968000B5E464 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song2.mp3; path = ../../../../../Downloads/song2.mp3; sourceTree = "<group>"; };
 		04A7FB1A2A9B968000B5E464 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song3.mp3; path = ../../../../../Downloads/song3.mp3; sourceTree = "<group>"; };
 		04A7FB1B2A9B968000B5E464 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song1.mp3; path = ../../../../../Downloads/song1.mp3; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		04A7FB172A9B93D400B5E464 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				04A424532A9DA7DD0042D05D /* DatabaseGetter.swift */,
 				04A7FB1B2A9B968000B5E464 /* song1.mp3 */,
 				04A7FB192A9B968000B5E464 /* song2.mp3 */,
 				04A7FB1A2A9B968000B5E464 /* song3.mp3 */,
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A424542A9DA7DD0042D05D /* DatabaseGetter.swift in Sources */,
 				04C9E51F2A972AB500BC0DB5 /* CustomTableViewCell.swift in Sources */,
 				04C9E5102A970A9600BC0DB5 /* Audio.swift in Sources */,
 				0431C9A72A946D0A002151E0 /* ViewController.swift in Sources */,
@@ -335,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KBCABK7LR;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KBCABK7LR;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
