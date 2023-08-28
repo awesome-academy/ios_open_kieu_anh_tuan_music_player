@@ -8,7 +8,8 @@
 import Foundation
 
 struct Audio {
-    let thumbnailSource: String
-    let title: String
-    let artist: String
+    let thumbnailImageView: String
+    let titleLabel: String
+    let artistLabel: String
+    let url: String
 }
