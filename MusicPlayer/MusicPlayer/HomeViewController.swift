@@ -12,9 +12,9 @@ final class HomeViewController: UIViewController {
     @IBOutlet private weak var listMusic: UITableView!
     
     let audios = [
-        Audio(thumbnailSource: "song1", title: "Lần cuối", artist: "Ngọt"),
-        Audio(thumbnailSource: "song2", title: "Bohemian Rhapsody", artist: "Queen"),
-        Audio(thumbnailSource: "song3", title: "A man without love", artist: "Engelbert Humperdinck")
+        Audio(thumbnailImageView: "song1", titleLabel: "Lần cuối", artistLabel: "Ngọt", url: "song1"),
+        Audio(thumbnailImageView: "song2", titleLabel: "Bohemian Rhapsody", artistLabel: "Queen", url: "song2"),
+        Audio(thumbnailImageView: "song3", titleLabel: "A man without love", artistLabel: "Engelbert Humperdinck", url: "song3")
     ]
     
     override func viewDidLoad() {

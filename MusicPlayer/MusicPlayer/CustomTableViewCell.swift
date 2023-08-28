@@ -13,8 +13,8 @@ final class CustomTableViewCell: UITableViewCell {
     @IBOutlet private weak var artistLabel: UILabel!
     
     func config(thisAudio: Audio){
-        thumbnailImageView.image = UIImage(named: thisAudio.thumbnailSource)
-        titleLabel.text = thisAudio.title
-        artistLabel.text = thisAudio.artist
+        thumbnailImageView.image = UIImage(named: thisAudio.thumbnailImageView)
+        titleLabel.text = thisAudio.titleLabel
+        artistLabel.text = thisAudio.artistLabel
     }
 }
