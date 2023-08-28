@@ -8,5 +8,5 @@
 import Foundation
 
 enum MPRemoteCommandType {
-    case play, pause
+    case play, pause, previous, next
 }

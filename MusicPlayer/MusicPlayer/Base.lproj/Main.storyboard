@@ -40,7 +40,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnT-Ot-z7q">
-                                <rect key="frame" x="175" y="568" width="64" height="57"/>
+                                <rect key="frame" x="177.5" y="568" width="59" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="play.circle.fill" catalog="system">
@@ -57,6 +57,9 @@
                                 <state key="normal" image="forward.end.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5z-h3-VeV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pl-kP-mXt">
                                 <rect key="frame" x="80" y="586" width="23.5" height="22"/>
@@ -64,12 +67,15 @@
                                 <state key="normal" image="backward.end.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFa-Wc-nVe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jnT-Ot-z7q" secondAttribute="trailing" constant="175" id="6Kd-EJ-cG2"/>
+                            <constraint firstItem="jnT-Ot-z7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4DY-Zg-rhf"/>
                             <constraint firstItem="0Pl-kP-mXt" firstAttribute="top" secondItem="RkK-hH-e8l" secondAttribute="bottom" constant="38" id="6ca-dy-nR6"/>
                             <constraint firstItem="jnT-Ot-z7q" firstAttribute="top" secondItem="RkK-hH-e8l" secondAttribute="bottom" constant="20" id="7np-1w-U0v"/>
                             <constraint firstItem="lRa-SN-D2P" firstAttribute="top" secondItem="RkK-hH-e8l" secondAttribute="bottom" constant="38" id="CJ2-Qa-mJJ"/>
@@ -84,14 +90,15 @@
                             <constraint firstItem="KdT-Bd-QKs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="igf-G4-OVX"/>
                             <constraint firstItem="vDp-xA-cya" firstAttribute="top" secondItem="ljQ-nW-mD4" secondAttribute="bottom" constant="12" id="jIS-Sd-fHl"/>
                             <constraint firstItem="ljQ-nW-mD4" firstAttribute="top" secondItem="KdT-Bd-QKs" secondAttribute="bottom" constant="40" id="pd8-V5-3z0"/>
-                            <constraint firstItem="jnT-Ot-z7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="q63-xm-ppR"/>
                             <constraint firstItem="0Pl-kP-mXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="rKt-zr-u5I"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S6t-bw-dUQ"/>
                     <connections>
                         <outlet property="artistLabel" destination="vDp-xA-cya" id="5s6-bO-4N3"/>
+                        <outlet property="nextButton" destination="lRa-SN-D2P" id="bGv-l4-GTE"/>
                         <outlet property="playButton" destination="jnT-Ot-z7q" id="5e6-ih-aUH"/>
+                        <outlet property="previousButton" destination="0Pl-kP-mXt" id="M7Q-ZJ-8wO"/>
                         <outlet property="thumbnailImageView" destination="KdT-Bd-QKs" id="5lb-5V-IEj"/>
                         <outlet property="titleLabel" destination="ljQ-nW-mD4" id="kaw-Qf-yXk"/>
                     </connections>

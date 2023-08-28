@@ -10,12 +10,8 @@ import UIKit
 final class HomeViewController: UIViewController {
 
     @IBOutlet private weak var listMusic: UITableView!
-    
-    let audios = [
-        Audio(thumbnailImageView: "song1", titleLabel: "Lần cuối", artistLabel: "Ngọt", url: "song1"),
-        Audio(thumbnailImageView: "song2", titleLabel: "Bohemian Rhapsody", artistLabel: "Queen", url: "song2"),
-        Audio(thumbnailImageView: "song3", titleLabel: "A man without love", artistLabel: "Engelbert Humperdinck", url: "song3")
-    ]
+
+    let audios = DatabaseGetter().getAudios()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +44,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "ViewController") as? ViewController {
-            vc.selectedAudio = audios[indexPath.row]
+            vc.audioIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
